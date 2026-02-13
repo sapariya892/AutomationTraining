@@ -11,7 +11,7 @@ function evaluatesBankloanApplication(
     //1. Check Credit Score
     if (creditScore > 750) {
         // if Credit score is above 750, the loan is automatically approved
-        console.log("Your loan has been approved. Your credit scrore is excellent" + creditScore);
+        console.log("Your loan has been approved. Your credit scrore is excellent:" + creditScore);
     } else if (creditScore >= 650 && creditScore <= 750) {
         //if the credit score between 650 and 750, further check are needed
         //2. Check income 
@@ -47,7 +47,7 @@ function evaluatesBankloanApplication(
 
 evaluatesBankloanApplication(
     "Bhavin Sapariya",
-    750,
+    751,
     51000,
     true,
     20
