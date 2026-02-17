@@ -4,11 +4,8 @@ interface employee {
     experince: number;
     rating: number;
 }
-
-
 //Declare the employee data 
-let empInfo: Map<string, employee> = new Map<string, employee>();
-
+const empInfo: Map<string, employee> = new Map<string, employee>();
 //Add the Employee data
 empInfo.set("Alice", { baseSalary: 75000, experince: 5.1, rating: 4.2 });
 empInfo.set("Bob", { baseSalary: 68000, experince: 3.2, rating: 3.8 });
@@ -20,7 +17,6 @@ empInfo.set("Bhavin", { baseSalary: 50000, experince: 5, rating: 4.0 });
 //Create empty map to store hike pecentage
 let hikeData: Map<string, number> = new Map();
 
-
 //calculate hike for each employee and store into in hike map
 for (const [name, emp] of empInfo) {
     //get the array of values for employee
@@ -31,6 +27,8 @@ for (const [name, emp] of empInfo) {
     hikeData.set(name, hikePercentage);
 
 }
+
+//console.log(hikeData)
 //Function to Calculate the hike percentage
 function calculateHikes(baseSalary: number, experince: number, rating: number): number {
     let variablePayPercentage: number = 0;
@@ -59,5 +57,4 @@ function calculateHikes(baseSalary: number, experince: number, rating: number): 
 for (let [name, hike] of hikeData) {
     console.log(name + " : " + hike.toFixed(2) + "%");
     //console.log(name+":"+ hike);
-
 }

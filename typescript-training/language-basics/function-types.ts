@@ -35,4 +35,46 @@ let greeting=(name:string):void=>console.log();
 
 
 
-//3. annonymous function
+//3. annonymous function =>is a fuction defined without a name.
+//synatx
+//fucntion outerfunction(functionparameter):returntype{
+//}
+
+//function with string parameter
+function printName(name:string):void{
+    console.log("Employee name is: "+name)
+}
+//calling funtion
+printName("Bhavin");
+
+
+function printAddress(address:string):void{
+    console.log("Employee Address is: "+address)
+}
+//function with fuction parameter
+//name is variable 
+function run(name:(emp:string) => void):void{
+    name("Bhavesh");
+}
+// 
+
+//Alert, callback function.
+
+//Run is main function and name is inner fuction and emp is parameter of inner fuction void is fuction return type
+//name("Bhavesh"); inner fuction value added internally 
+run(printName);
+run(printAddress);
+
+
+function mainFunction(innerFunction:(parameterOfInnerFuction:string)=>void):void{
+    innerFunction("Input Value Added internally")
+}
+mainFunction(
+    function(name:string):void{
+        console.log(name);
+    }
+)
+
+function runs(name:string){
+    console.log("My Name"+name)
+}
