@@ -21,9 +21,9 @@ console.log("Reverse String:"+reverseString);
 //Convert the first character of each word to uppercase and print original sentense
 console.log("Convert the first character of each word to uppercase and print original sentense");
 //Split the character
-let words=sentence.split(" ");
+let countWords=sentence.split(" ");
 let result=" ";
-for(let i:number=0;i<words.length;i++){
+for(let i:number=0;i<countWords.length;i++){
     result += words[i][0].toUpperCase() + words[i].substring(1) + " ";
 }
 console.log(result);
