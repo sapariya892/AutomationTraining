@@ -10,6 +10,8 @@ console.log(words);
 
 //Add count for the words
 let count=0;
+
+//Add the index for the word of the position  
 let indexes:number[]=[];
 for(let i=0;i<words.length;i++){
     if(words[i]===findToWord){
