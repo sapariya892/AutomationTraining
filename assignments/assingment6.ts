@@ -8,7 +8,7 @@ function checkPrimeNumber(num:number):string{
     //Check divisibility by all numbers from 2
     //If any number divides 'num' exactly (remainder 0), it's not prime
     for(let i:number=2;i < num; i++){
-        if(num % i==0){
+        if(num % i===0){
             return `${num} is divisible by ${i}, so it not prime`;
         }
     }
