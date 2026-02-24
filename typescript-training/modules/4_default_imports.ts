@@ -1,4 +1,8 @@
-import greet from "./4_default_exports.ts";
+import mul from "./4_default_exports.ts";
 
-console.log(greet('Bhavin'));
+const result=mul(10,15);
+console.log(result);
+
+
+
 

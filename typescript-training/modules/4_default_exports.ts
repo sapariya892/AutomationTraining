@@ -1,9 +1,12 @@
-const PI = 3.14;
-function add(a: number, b: number): number {
+export const PI = 3.14;
+export function sum(a: number, b: number): number {
   return a + b;
 }
-export default function greet(name: string): string {
-  return `Hello, ${name}`;
+
+export default function multiple(a: number, b: number): number {
+  return a * b;
 }
 
-export { PI, add };
+export function subtract(a: number, b: number): number {
+  return a - b;
+}
