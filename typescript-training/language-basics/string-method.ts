@@ -90,3 +90,41 @@ let dynamicString:string="UserName : Bhavin | Password : Bhavin@123";
 let spllttedValues=dynamicString.split(" "); 
 console.log(spllttedValues[3]);
 console.log(spllttedValues[6]);
+
+
+//13.Compare two different String
+//=== Operator for strict Equqality (compare both value and type )
+//=== Operator for losse Equqality (compare only value, perform type coeracion) (case sensitive)
+// include() method for substring check (case senstitive)
+// Start with () amd end with() methhod for prefix and suffix check(case senstive)
+console.log("Compare two different String");
+let str1:string="Bhavin Sapariya";
+let str2:string="bhavin sapariya";
+console.log("using === operator"+(str1===str2));
+console.log("using == operator"+(str1==str2));
+let str3:string="100";//string 
+let numbers:number=100;//number
+//console.log("using === operator: "+(str3===numbers));//false
+//console.log("using == operator: "+(str3==numbers));//true
+let str4:string="TypeScript"
+console.log("Type Script includes 'Script':  "+str4.includes("Script"));
+console.log("Type Script includes 'Script':  "+str4.includes("script"));
+console.log("Type Script includes 'Script':  "+str4.startsWith("Type"));
+console.log("Type Script includes 'Script':  "+str4.endsWith("script"));
+
+
+
+//14. Data Conversion
+//conveting other data type to string 
+console.log("14 Data Conversion");
+let stdCode:number=144;
+let phone:number=355345;
+let stdCodeString=String(stdCode);
+console.log(stdCodeString+phone);
+
+//conveting string to other data type
+let balance:string="Account Balance is 9,999.99 rupeess";
+let accountbalance=balance.replace(/[^0-9.]/g," ");
+console.log(accountbalance);
+let bal:number=parseFloat(accountbalance);
+console.log("Account Balance"+ (bal>=10000));

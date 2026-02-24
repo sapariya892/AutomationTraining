@@ -20,6 +20,11 @@
     "declaration": true,
     "declarationMap": true,
 
+    
+    //Adding module congiguration to allow using ES moudle in Node.js
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
@@ -31,6 +36,8 @@
     // "noUnusedParameters": true,
     // "noFallthroughCasesInSwitch": true,
     // "noPropertyAccessFromIndexSignature": true,
+
+
 
     // Recommended Options
     "strict": true,
