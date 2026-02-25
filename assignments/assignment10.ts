@@ -1,5 +1,4 @@
-function maxprofit(prices:number[]):number{
-    
+function maxprofit(prices:number[]):number{  
     //Declare variable for the max and min price
     if (prices.length === 0) return 0;
     let minPrice:number=prices[0];
@@ -19,5 +18,6 @@ function maxprofit(prices:number[]):number{
     return maxProfit;
 }
 //Calling the funtion
-const result=maxprofit([7,1,5,3,6,4]);
+//const result=maxprofit([7,1,5,3,6,4]);
+const result=maxprofit([10,7,5,8,2,18]);
 console.log(`Maximum Profit Taking to Home Is ${result}`);
