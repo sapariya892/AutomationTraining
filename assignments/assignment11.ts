@@ -1,8 +1,9 @@
 //Implements pow(x,n) which calucaluated x raised to the power n(ie xn)
 
 //Declare required variable 
-let x:number=-2;
+let x:number=-2; // Base Number
 let n:number=-2;
+
 let pow:number=0;
 //Checking negative number
 if(n<0){
