@@ -19,6 +19,7 @@ function checkStringIsPalindromeOrNot(phrase:string):boolean{
     }
     console.log("Reverse String: "+reverseString);
 
+    //Compare the string
     return stringWithoutSpecialChars===reverseString;
     
 }
