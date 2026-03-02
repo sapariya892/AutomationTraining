@@ -1,0 +1,10 @@
+let x = 50;
+console.log(x);
+x += 10;
+console.log(x);
+x -= 5;
+console.log(x);
+x *= 12;
+console.log(x);
+x %= 4;
+console.log(x);
