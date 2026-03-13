@@ -20,7 +20,7 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0, //(2 is CI CD and 0 is local)
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 2 : 1, //(2 is CI CD and 0 is local)
+  workers: process.env.CI ? 2 : undefined, //(2 is CI CD and 0 is local)
   // if you have give 2 then 2 test casw will run 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',

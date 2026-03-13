@@ -25,7 +25,7 @@ test('Browser Action - Open and Close Chrome', async () => {
 
     //Verify application launched by using the title of the application 
     //Asseration : expected result vs acutal 
-    await expect(page).toHaveTitle(/Google/);
+    await expect(page).toHaveTitle('Google');
 
     //Locate Sign-In button and take screenshot.
     const signButton=page.locator('a[aria-label="Sign in"]');

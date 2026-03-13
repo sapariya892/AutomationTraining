@@ -18,7 +18,6 @@ test.describe("Group 1 - Test", async () => {
 });
 
 test.describe("Group 2 - Test", async () => {
-
     test("Group 2 - Test 1", async () => {
         console.log("Group 2 - Test 1 executing........");
     });
